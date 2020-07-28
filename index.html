@@ -4,7 +4,8 @@
 <head>
 	<title>Stacked Bar Chart</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
-	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+	<script src="../../utils.js"></script>
+	<title>Base de datos pewruna</title>
 	<style>
 	canvas {
 		-moz-user-select: none;
@@ -17,48 +18,29 @@
 
 <body>
 	<div style="width: 75%">
-		Lo pewruuus kataneros
 		<canvas id="canvas"></canvas>
 	</div>
-	<button id="randomizeData">Random</button>
+	<button id="randomizeData"></button>
 	<script>
 		var barChartData = {
-			labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+			labels: ['Dixo', 'Fran', 'Rama', 'Cris', 'Luxo', 'Lean', 'Matur', 'Joaco', 'Tody', 'Mar'],
 			datasets: [{
-				label: 'Dataset 1',
+				label: 'Stompeadas',
 				backgroundColor: window.chartColors.red,
 				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
+					1, 0, 0, 0 ,0 ,0 , 0, 0, 0, 0, 0
 				]
 			}, {
-				label: 'Dataset 2',
+				label: 'Katanes',
 				backgroundColor: window.chartColors.blue,
 				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
+					0, 0, 0, 0 ,0 ,0 , 0, 0, 0, 0, 0
 				]
 			}, {
-				label: 'Dataset 3',
+				label: 'Goles?',
 				backgroundColor: window.chartColors.green,
 				data: [
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor(),
-					randomScalingFactor()
+					0, 0, 0, 0 ,0 ,0 , 0, 0, 0, 0, 0
 				]
 			}]
 
@@ -71,7 +53,7 @@
 				options: {
 					title: {
 						display: true,
-						text: 'Chart.js Bar Chart - Stacked'
+						text: 'Lo pewruuus'
 					},
 					tooltips: {
 						mode: 'index',
